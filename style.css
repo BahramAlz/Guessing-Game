@@ -1,0 +1,26 @@
+body{
+    background-color: #333237;
+}
+
+.container {
+    background-color: whitesmoke;
+    border: 5px solid grey;
+    height: 275px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-size: 25px;
+}
+
+input{
+    width: 100px;
+    margin: 25px auto;
+}
+
+.btn{
+    margin: 25px auto auto 5px;
+}
