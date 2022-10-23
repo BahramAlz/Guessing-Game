@@ -1,3 +1,5 @@
+"use strict";
+
 //Restart button
 let resetButton = document.getElementById('resetButton');
 
