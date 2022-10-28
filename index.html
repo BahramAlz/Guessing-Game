@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"/>
+
+    <!-- Animations -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <title>Guessing Game</title>
 
   </head>
   <body>
-
     <header class="header-container">
       <h1>Guessing Game</h1>
     </header>
     <main>
       <div class="container">
-        <p>Guess a number between 1 - 100</p>
-        <p id="outputText">Enter a number below</p>
-        <input type="text" name="" id="userInput" placeholder="Num"/>
-        <p id="attemptsTracker">You have 10 attempts</p>
-        
-        <div class="button-container">
-          <button id="btn" class="btn">Guess</button>
-          <button id="resetButton" class="btn" >Restart</button>
+        <div>
+          <p>Guess a number between 1 - 10</p>
+          <p id="outputText">Enter a number below</p>
         </div>
-
+        <form id="guessForm">
+          <input type="text" name="input" placeholder="Num"/>
+          <p id="attemptsTracker">You have 5 attempts</p>
+          <button type="sumbit" class="btn">Guess</button>
+        </form>
+        <div class="button-container">
+          <button id="resetButton" class="btn">Restart</button>
+        </div>
       </div>
     </main>
     <footer class="footer-container">
@@ -35,7 +43,6 @@
           <a href="https://github.com/BahramAlz?tab=repositories" target="_blank"><img src="images2/github.png"></a>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
