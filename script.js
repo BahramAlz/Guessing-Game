@@ -1,5 +1,20 @@
 "use strict";
 
+//Count Down Timer
+let countdownEl = document.getElementById("countdown"),
+secondsLeft = 10;
+
+let startButton = document.getElementById("countdowntimerStart")
+
+startButton.onclick = function() {
+  const countdownTimer = setInterval(() => {
+    if (secondsLeft <= 0) clearInterval(countdownTimer);
+    countdownEl.value = secondsLeft;
+    countdownEl.textContent = secondsLeft;
+    secondsLeft -= 1;
+  }, 1000);
+}
+
 //Game
 // Setting up the variables
 const form = document.getElementById("guessForm");

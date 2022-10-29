@@ -23,7 +23,14 @@
     </header>
     <main>
       <div class="container">
-        <div>
+        <div class="countdown">
+          <p>You have 10 seconds to complete the game</p>
+          <h3>
+            00:<span max="10" id="countdown">10</span>
+          </h3>
+          <button class="btn" id="countdowntimerStart">Start</button>
+        </div>
+        <div class="instructions">
           <p>Guess a number between 1 - 10</p>
           <p id="outputText">Enter a number below</p>
         </div>
